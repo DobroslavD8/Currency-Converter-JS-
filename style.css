@@ -1,0 +1,29 @@
+#title {
+	text-align: center;
+	color: white;
+}
+
+#container {
+	padding-top: 2%;
+	text-align: center;
+}
+
+p {
+	text-align: left;
+	padding-left: 39%;
+	color: white;
+}
+
+#btn1 {
+	text-align: left;
+	padding-left: 35%;
+}
+
+#ToRow { 
+	display: none; 
+	text-align: left;
+}​
+
+span {
+	font-color: white;
+}

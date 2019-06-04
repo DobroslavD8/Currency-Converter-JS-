@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Converter</title>
+	<meta charset="UTF-8">
+    <!-- Loading Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body background="background.jpg">
+	<h2 id="title">Currency Converter</h2>
+	<div id="container">
+		<div id="value" style="padding-left: 20px; padding-top: 20px;">
+			<p>Enter the amount:</p>
+			<input type="text" id="amountBox" value="1">
+
+			<select id="currencyDropDown" >
+			  <option value="default" selected="selected">-SELECT CURRENCY-</option>
+			  <option value="fromBGN">BGN</option>
+			  <option value="fromUSD">USD</option>
+			  <option value="fromEUR">EUR</option>
+			  <option value="fromGBP">GBP</option>
+			  <option value="fromRUB">RUB</option>
+			</select>
+
+			</br>
+			<button id="btn" style="margin-top: 10px; margin-bottom: 10px;" type="button" onclick="showToRow();">+</button>
+			</br>
+				<div id="toReload"> <!-- Single row -->
+					<div id="ToRow" style="display:none;">
+						<span style="color:white;">To currency</span>
+						<span style="padding-left: 7%; color:white;">Calculated</span>
+						<span style="padding-left: 8%; color:white;">For one</span>
+						<br>
+
+						<select id="first">
+				  			<option value="default" selected="selected">-SELECT CURRENCY-</option>
+				  			<option value="toBGN">BGN</option>
+				  			<option value="toUSD">USD</option>
+				  			<option value="toEUR">EUR</option>
+				  			<option value="toGBP">GBP</option>
+				  			<option value="toRUB">RUB</option>
+						</select>
+
+						<input type="text" id="resultBox" >
+						<input type="text" id="for1">
+					</div>
+           		</div>
+		</div>
+		<script type="text/javascript" src="logic.js"></script>
+	</div>
+</body>
+</html>
